@@ -1,0 +1,29 @@
+{
+    "name": "kakhura/laravel-check-requests",
+    "description": "This package checks requests",
+    "keywords": ["laravel", "check", "requests"],
+    "type": "library",
+    "homepage": "https://github.com/kakhura/laravel-check-requests",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kakhura",
+            "email": "giokaxura@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kakhura\\LaravelCheckRequest\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kakhura\\CheckRequest\\CheckRequestServiceProvider"
+            ]
+        }
+    }
+}
