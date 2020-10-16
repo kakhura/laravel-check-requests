@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kakhura\\CheckRequest\\CheckRequestServiceProvider"
+                "Kakhura\\LaravelCheckRequest\\CheckRequestServiceProvider"
             ]
         }
     }
