@@ -46,7 +46,7 @@ class CheckRequestServiceProvider extends ServiceProvider
         if (File::exists($viewPath)) {
             $this->loadViewsFrom($viewPath, 'check-requests');
             $this->publishes([
-                $viewPath => base_path('resources/lang/vendor/check-requests/en'),
+                $viewPath => base_path('resources/lang/en/messages.php'),
             ], 'kakhura-check-requests-views');
         }
     }

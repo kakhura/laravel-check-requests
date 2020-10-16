@@ -19,10 +19,8 @@ trait HasRelatedRequest
      */
     public function createRequestIdentifier(string $requestId): RequestIdentifier
     {
-        return RequestIdentifier::create([
+        return $this->reletadRequest()->create([
             'user_id' => auth()->check() ? auth()->user()->id : null,
-            'model_type' => self::class,
-            'model_id' => $this->id,
             'request_id' => $requestId,
         ]);
     }

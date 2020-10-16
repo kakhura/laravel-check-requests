@@ -2,9 +2,9 @@
 
 namespace Kakhura\LaravelCheckRequest\Http\Controllers\Request;
 
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
 use Kakhura\LaravelCheckRequest\Helpers\Helper;
-use Kakhura\LaravelCheckRequest\Http\Controllers\Admin\Controller;
 use Kakhura\LaravelCheckRequest\Models\Request\RequestIdentifier;
 use Kakhura\LaravelCheckRequest\Services\RequestIdentifier\RequestIdentifierService;
 
@@ -17,12 +17,9 @@ class CheckController extends Controller
         if (is_null($request)) {
             return Helper::response(false, [], 404, ['messasge' => trans('messages.request_identifier_not_found')]);
         }
-        $request->transform(function (RequestIdentifier $request) {
-            return [
-                'model' => Str::snake(Str::afterLast($request->model_type, "\\")),
-                'id' => $request->model->uuid ?: $request->model->id,
-            ];
-        });
-        return Helper::response(true, ['request' => $request]);
+        return Helper::response(true, [
+            'id' => $request->model->uuid ?: $request->model->id,
+            'model' => Str::snake(Str::afterLast($request->model_type, "\\")),
+        ]);
     }
 }
