@@ -1,12 +1,12 @@
 <?php
 
-namespace Kakhura\CheckRequest\Http\Controllers\Request;
+namespace Kakhura\LaravelCheckRequest\Http\Controllers\Request;
 
 use Illuminate\Support\Str;
-use Kakhura\CheckRequest\Helpers\Helper;
-use Kakhura\CheckRequest\Http\Controllers\Admin\Controller;
-use Kakhura\CheckRequest\Models\Request\RequestIdentifier;
-use Kakhura\CheckRequest\Services\RequestIdentifier\RequestIdentifierService;
+use Kakhura\LaravelCheckRequest\Helpers\Helper;
+use Kakhura\LaravelCheckRequest\Http\Controllers\Admin\Controller;
+use Kakhura\LaravelCheckRequest\Models\Request\RequestIdentifier;
+use Kakhura\LaravelCheckRequest\Services\RequestIdentifier\RequestIdentifierService;
 
 class CheckController extends Controller
 {

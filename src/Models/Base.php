@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakhura\CheckRequest\Models;
+namespace Kakhura\LaravelCheckRequest\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakhura\CheckRequest\Services;
+namespace Kakhura\LaravelCheckRequest\Services;
 
 class Service
 {

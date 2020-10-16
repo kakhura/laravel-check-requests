@@ -1,9 +1,9 @@
 <?php
 
-namespace Kakhura\CheckRequest\Traits\Models;
+namespace Kakhura\LaravelCheckRequest\Traits\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Kakhura\CheckRequest\Models\Request\RequestIdentifier;
+use Kakhura\LaravelCheckRequest\Models\Request\RequestIdentifier;
 
 trait HasRelatedRequest
 {

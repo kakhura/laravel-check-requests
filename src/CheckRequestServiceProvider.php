@@ -1,11 +1,11 @@
 <?php
 
-namespace Kakhura\CheckRequest;
+namespace Kakhura\LaravelCheckRequest;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
-use Kakhura\CheckRequest\Http\Middleware\WithRequestIdentifier;
+use Kakhura\LaravelCheckRequest\Http\Middleware\WithRequestIdentifier;
 
 class CheckRequestServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakhura\CheckRequest\Exceptions;
+namespace Kakhura\LaravelCheckRequest\Exceptions;
 
 use Exception;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Kakhura\CheckRequest\Http\Middleware;
+namespace Kakhura\LaravelCheckRequest\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Kakhura\CheckRequest\Exceptions\RequestIdentifierFoundException;
-use Kakhura\CheckRequest\Exceptions\RequestIdentifierRequiredException;
-use Kakhura\CheckRequest\Services\RequestIdentifier\RequestIdentifierService;
+use Kakhura\LaravelCheckRequest\Exceptions\RequestIdentifierFoundException;
+use Kakhura\LaravelCheckRequest\Exceptions\RequestIdentifierRequiredException;
+use Kakhura\LaravelCheckRequest\Services\RequestIdentifier\RequestIdentifierService;
 
 class WithRequestIdentifier
 {

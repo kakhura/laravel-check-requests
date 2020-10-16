@@ -1,6 +1,6 @@
 <?php
 
-namespace Kakhura\CheckRequest\Helpers;
+namespace Kakhura\LaravelCheckRequest\Helpers;
 
 use Illuminate\Http\JsonResponse;
 

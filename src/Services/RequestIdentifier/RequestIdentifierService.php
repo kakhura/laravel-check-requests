@@ -1,10 +1,10 @@
 <?php
 
-namespace Kakhura\CheckRequest\Services\RequestIdentifier;
+namespace Kakhura\LaravelCheckRequest\Services\RequestIdentifier;
 
 use App\Models\User;
-use Kakhura\CheckRequest\Models\Request\RequestIdentifier;
-use Kakhura\CheckRequest\Services\Service;
+use Kakhura\LaravelCheckRequest\Models\Request\RequestIdentifier;
+use Kakhura\LaravelCheckRequest\Services\Service;
 
 class RequestIdentifierService extends Service
 {
