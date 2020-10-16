@@ -68,7 +68,7 @@ php artisan vendor:publish --tag=kakhura-check-requests-migrations
 This command will copy file `[/vendor/kakhura/laravel-check-requests/database/migrations]` to `[/database/migrations]`
 
 After publish [Migrations](#migrations), you must add `HasRelatedRequest` trait in your model in which you want check if request already had sent:
-```bash
+```php
 use Kakhura\CheckRequest\Traits\Models\HasRelatedRequest;
 
 class Application extends Model
@@ -78,7 +78,7 @@ class Application extends Model
 
 ```
 You must create `RequestIdentifier` instance in all your model create functionality like this:
-```bash
+```php
 use Models\Application;
 
 class ApplicationService extends Service
@@ -96,7 +96,8 @@ class ApplicationService extends Service
 After this, all of your route on which you want to check request existence, you must use middleware alias `with_request_identifier`.
 
 Also, you can check if request already sent and receive model on which request had sent. Endpoint is `http://domain.com/requests/check/{requestId}`. This endpoint return 404 not found if request not found. If request found, you will receive response like this:
- ```bash
+
+ ```php
 return [
     'model' => 'application',
     'id' => model_uuid ?: model_id,
