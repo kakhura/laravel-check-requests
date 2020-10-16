@@ -12,6 +12,7 @@ class RequestIdentifier extends Model
     protected $table = 'request_identifiers';
 
     protected $fillable = [
+        'user_id',
         'model_type',
         'model_id',
         'request_id',

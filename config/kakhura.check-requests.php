@@ -8,4 +8,9 @@ return [
         'post',
         'put',
     ],
+
+    /**
+     * Package use or not auth user check.
+     */
+    'use_auth_user_check' => false,
 ];
