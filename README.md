@@ -100,7 +100,7 @@ Also, you can check if request already sent and receive model on which request h
  ```php
 return [
     'model' => 'application',
-    'id' => model_uuid ?: model_id,
+    'id' => 'model_uuid' ?: 'model_id',
 ];
  ```
 
